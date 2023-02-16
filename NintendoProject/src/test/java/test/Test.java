@@ -3,8 +3,11 @@ package test;
 import model.Adresse;
 import model.Boutique;
 import model.Console;
-
 import model.Jeu;
+
+import java.time.LocalDate;
+
+import model.Achat;
 
 public class Test {
 
@@ -24,7 +27,9 @@ public class Test {
 		
 		Adresse adr = new Adresse (5, "rue des Irlandais", "Nantes");
 		Boutique boutique = new Boutique ("world of games", adr);
+		Achat achat1 = new Achat (jeu1,LocalDate.now(),45.0);
 		
+		System.out.println(achat1);
 		
 	}
 
