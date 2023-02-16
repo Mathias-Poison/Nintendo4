@@ -1,8 +1,11 @@
 package test;
 
 import model.Console;
-
 import model.Jeu;
+
+import java.time.LocalDate;
+
+import model.Achat;
 
 public class Test {
 
@@ -20,7 +23,9 @@ public class Test {
 		Jeu jeu4 = new Jeu ("MarioKart",console4);
 		Jeu jeu5 = new Jeu ("Metroid",console5);
 		
+		Achat achat1 = new Achat (jeu1,LocalDate.now(),45.0);
 		
+		System.out.println(achat1);
 		
 	}
 
